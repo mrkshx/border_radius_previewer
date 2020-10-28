@@ -45,7 +45,7 @@ const BorderSquare = () => {
         return { ...prevState, bottomRight: value }
         });
       }}
-      className="sliderBottomRíght" />
+      className="sliderBottomRight" />
   </div>
 };
 
