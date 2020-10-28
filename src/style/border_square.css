@@ -1,0 +1,6 @@
+#border_square {
+  height: 350px;
+  width: 350px;
+  border-radius: 20% 20% 20% 20%;
+  border: 2px solid black;
+}
