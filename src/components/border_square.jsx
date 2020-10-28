@@ -16,6 +16,7 @@ const BorderSquare = () => {
   return <div style={{borderTopLeftRadius: `${borderRadius.topLeft}px`, borderTopRightRadius: `${borderRadius.topRight}px`, borderBottomLeftRadius: `${borderRadius.bottomLeft}px`, borderBottomRightRadius: `${borderRadius.bottomRight}px`}} id="border_square">
     <Slider
       value={borderRadius.topLeft}
+      max={350}
       onChange={value => {
         setBorderRadius(prevState => {
         return { ...prevState, topLeft: value }
@@ -24,6 +25,7 @@ const BorderSquare = () => {
       className="sliderTopLeft" />
     <Slider
       value={borderRadius.topRight}
+      max={350}
       onChange={value => {
         setBorderRadius(prevState => {
         return { ...prevState, topRight: value }
@@ -32,6 +34,7 @@ const BorderSquare = () => {
       className="sliderTopRight" />
     <Slider
       value={borderRadius.bottomLeft}
+      max={350}
       onChange={value => {
         setBorderRadius(prevState => {
         return { ...prevState, bottomLeft: value }
@@ -40,6 +43,7 @@ const BorderSquare = () => {
       className="sliderBottomLeft" />
     <Slider
       value={borderRadius.bottomRight}
+      max={350}
       onChange={value => {
         setBorderRadius(prevState => {
         return { ...prevState, bottomRight: value }
