@@ -7,13 +7,13 @@ import '../style/border_square.css';
 const BorderSquare = () => {
   const [borderRadius, setBorderRadius] = useState(
   {
-    topLeft: "30px",
-    topRight: "10px",
-    bottomLeft: "90px",
-    bottomRight: "40px",
+    topLeft: 30,
+    topRight: 10,
+    bottomLeft: 90,
+    bottomRight: 40,
   });
 
-  return <div style={{borderTopLeftRadius: borderRadius.topLeft, borderTopRightRadius: borderRadius.topRight, borderBottomLeftRadius: borderRadius.bottomLeft, borderBottomRightRadius: borderRadius.bottomRight}} id="border_square">
+  return <div style={{borderTopLeftRadius: `${borderRadius.topLeft}px`, borderTopRightRadius: `${borderRadius.topRight}px`, borderBottomLeftRadius: `${borderRadius.bottomLeft}px`, borderBottomRightRadius: `${borderRadius.bottomRight}px`}} id="border_square">
     <Slider className="sliderTopLeft" />
     <Slider className="sliderTopRight" />
     <Slider className="sliderBottomLeft" />
