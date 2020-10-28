@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "border_radius_previewer",
+  "name": "Border Radius Previewer",
   "icons": [
     {
       "src": "favicon.ico",
