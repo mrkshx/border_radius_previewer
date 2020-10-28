@@ -2,4 +2,33 @@
   height: 350px;
   width: 350px;
   border: 2px solid black;
+  position: relative;
+}
+
+.sliderTopLeft {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 50%;
+}
+
+.sliderTopRight {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 50%;
+}
+
+.sliderBottomLeft {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  width: 50%;
+}
+
+.sliderBottomRíght {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 50%;
 }
