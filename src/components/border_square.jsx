@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import Slider from "rc-slider";
+import Slider, { createSliderWithTooltip } from "rc-slider";
 import 'rc-slider/assets/index.css';
 
 import '../style/border_square.css';
+
+const SliderWithTooltip = createSliderWithTooltip(Slider);
 
 const BorderSquare = () => {
   const [borderRadius, setBorderRadius] = useState(
@@ -14,7 +16,16 @@ const BorderSquare = () => {
   });
 
   return <div style={{borderTopLeftRadius: `${borderRadius.topLeft}px`, borderTopRightRadius: `${borderRadius.topRight}px`, borderBottomLeftRadius: `${borderRadius.bottomLeft}px`, borderBottomRightRadius: `${borderRadius.bottomRight}px`}} id="border_square">
-    <Slider
+    <SliderWithTooltip
+      marks={{
+        0: `0px`,
+        350: `350px`
+      }}
+      tipFormatter={value => `${value}px`}
+      tipProps={{
+        placement: 'top',
+        visible: true,
+      }}
       value={borderRadius.topLeft}
       max={350}
       onChange={value => {
@@ -23,7 +34,16 @@ const BorderSquare = () => {
         });
       }}
       className="sliderTopLeft" />
-    <Slider
+    <SliderWithTooltip
+      marks={{
+        0: `0px`,
+        350: `350px`
+      }}
+      tipFormatter={value => `${value}px`}
+      tipProps={{
+        placement: 'top',
+        visible: true,
+      }}
       value={borderRadius.topRight}
       max={350}
       onChange={value => {
@@ -32,7 +52,16 @@ const BorderSquare = () => {
         });
       }}
       className="sliderTopRight" />
-    <Slider
+    <SliderWithTooltip
+      marks={{
+        0: `0px`,
+        350: `350px`
+      }}
+      tipFormatter={value => `${value}px`}
+      tipProps={{
+        placement: 'bottom',
+        visible: true,
+      }}
       value={borderRadius.bottomLeft}
       max={350}
       onChange={value => {
@@ -41,7 +70,16 @@ const BorderSquare = () => {
         });
       }}
       className="sliderBottomLeft" />
-    <Slider
+    <SliderWithTooltip
+      marks={{
+        0: `0px`,
+        350: `350px`
+      }}
+      tipFormatter={value => `${value}px`}
+      tipProps={{
+        placement: 'bottom',
+        visible: true,
+      }}
       value={borderRadius.bottomRight}
       max={350}
       onChange={value => {
