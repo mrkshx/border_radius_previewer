@@ -5,7 +5,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 const BorderRadiusClipboard = () => {
   const [clipboardText, copyToClipboard] = useState("");
 
-  return <div>
+  return <div id="border-radius-clipboard" >
     <input value={clipboardText} onChange={({target: {value}}) => copyToClipboard(value)} />
     <CopyToClipboard text={clipboardText}>
       <button>Copy to clipboard with button</button>

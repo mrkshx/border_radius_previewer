@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Slider, { createSliderWithTooltip } from "rc-slider";
+import BorderRadiusClipboard from './border_radius_clipboard';
+
 import 'rc-slider/assets/index.css';
 
 import '../style/border_square.css';
@@ -88,6 +90,7 @@ const BorderSquare = () => {
         });
       }}
       className="sliderBottomRight" />
+      <BorderRadiusClipboard/>
   </div>
 };
 
