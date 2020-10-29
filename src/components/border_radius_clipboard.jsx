@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
+import '../style/border_radius_clipboard.css';
+
 
 const BorderRadiusClipboard = () => {
   const [clipboardText, copyToClipboard] = useState("");
