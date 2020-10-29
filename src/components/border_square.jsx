@@ -15,19 +15,19 @@ const BorderSquare = () => {
     bottomRight: 40,
   });
 
-  return <div style={{borderTopLeftRadius: `${borderRadius.topLeft}px`, borderTopRightRadius: `${borderRadius.topRight}px`, borderBottomLeftRadius: `${borderRadius.bottomLeft}px`, borderBottomRightRadius: `${borderRadius.bottomRight}px`}} id="border_square">
+  return <div style={{borderTopLeftRadius: `${borderRadius.topLeft}%`, borderTopRightRadius: `${borderRadius.topRight}%`, borderBottomLeftRadius: `${borderRadius.bottomLeft}%`, borderBottomRightRadius: `${borderRadius.bottomRight}%`}} id="border_square">
     <SliderWithTooltip
       marks={{
-        0: `0px`,
-        350: `350px`
+        0: `0%`,
+        100: `100%`
       }}
-      tipFormatter={value => `${value}px`}
+      tipFormatter={value => `${value}%`}
       tipProps={{
         placement: 'top',
         visible: true,
       }}
       value={borderRadius.topLeft}
-      max={350}
+      max={100}
       onChange={value => {
         setBorderRadius(prevState => {
         return { ...prevState, topLeft: value }
@@ -36,16 +36,16 @@ const BorderSquare = () => {
       className="sliderTopLeft" />
     <SliderWithTooltip
       marks={{
-        0: `0px`,
-        350: `350px`
+        0: `0%`,
+        100: `100%`
       }}
-      tipFormatter={value => `${value}px`}
+      tipFormatter={value => `${value}%`}
       tipProps={{
         placement: 'top',
         visible: true,
       }}
       value={borderRadius.topRight}
-      max={350}
+      max={100}
       onChange={value => {
         setBorderRadius(prevState => {
         return { ...prevState, topRight: value }
@@ -54,16 +54,16 @@ const BorderSquare = () => {
       className="sliderTopRight" />
     <SliderWithTooltip
       marks={{
-        0: `0px`,
-        350: `350px`
+        0: `0%`,
+        100: `100%`
       }}
-      tipFormatter={value => `${value}px`}
+      tipFormatter={value => `${value}%`}
       tipProps={{
         placement: 'bottom',
         visible: true,
       }}
       value={borderRadius.bottomLeft}
-      max={350}
+      max={100}
       onChange={value => {
         setBorderRadius(prevState => {
         return { ...prevState, bottomLeft: value }
@@ -72,16 +72,16 @@ const BorderSquare = () => {
       className="sliderBottomLeft" />
     <SliderWithTooltip
       marks={{
-        0: `0px`,
-        350: `350px`
+        0: `0%`,
+        100: `100%`
       }}
-      tipFormatter={value => `${value}px`}
+      tipFormatter={value => `${value}%`}
       tipProps={{
         placement: 'bottom',
         visible: true,
       }}
       value={borderRadius.bottomRight}
-      max={350}
+      max={100}
       onChange={value => {
         setBorderRadius(prevState => {
         return { ...prevState, bottomRight: value }
