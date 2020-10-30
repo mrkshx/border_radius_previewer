@@ -7,10 +7,16 @@
   margin-bottom: 20px;
   text-align: center;
   background-color: transparent;
+  color: white;
+  font-weight: bold;
 }
 
 
 #circle-content {
   display: grid;
   justify-content: center;
+}
+
+#square-content-heading {
+  color: white
 }
