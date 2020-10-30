@@ -1,16 +1,15 @@
 #border-radius-clipboard {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  width: 60%;
 }
 
 #border-radius-data {
   border: none;
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-#clipboard-btn {
 
+#circle-content {
+  display: grid;
+  justify-content: center;
 }
