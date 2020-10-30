@@ -3,6 +3,8 @@
   width: 350px;
   border: 2px solid black;
   position: relative;
+  display: grid;
+  align-items: center;
 }
 
 .sliderTopLeft {

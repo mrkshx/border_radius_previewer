@@ -90,7 +90,10 @@ const BorderSquare = () => {
         });
       }}
       className="sliderBottomRight" />
-      <BorderRadiusClipboard value={borderRadius} />
+      <div id="circle-content" >
+        <h3>Border Radius Reviewer</h3>
+        <BorderRadiusClipboard value={borderRadius} />
+      </div>
   </div>
 };
 
