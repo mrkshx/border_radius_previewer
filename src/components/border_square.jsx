@@ -91,7 +91,7 @@ const BorderSquare = () => {
       }}
       className="sliderBottomRight" />
       <div id="circle-content" >
-        <h3>Border Radius Reviewer</h3>
+        <h3 id="square-content-heading" >Border Radius Reviewer</h3>
         <BorderRadiusClipboard value={borderRadius} />
       </div>
   </div>

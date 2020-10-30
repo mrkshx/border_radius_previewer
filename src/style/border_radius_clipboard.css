@@ -6,10 +6,24 @@
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
 }
 
 
 #circle-content {
   display: grid;
   justify-content: center;
+}
+
+#square-content-heading {
+  color: white
+}
+
+#clipboard-btn {
+  background: rgba(0,212,255,1);
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 2px 2px grey;
 }

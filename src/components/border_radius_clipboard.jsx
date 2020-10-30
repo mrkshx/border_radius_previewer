@@ -15,7 +15,7 @@ const BorderRadiusClipboard = (props) => {
   return <div id="border-radius-clipboard" >
     <input id="border-radius-data" value={clipboardText} onChange={({target: {value}}) => copyToClipboard(value)} />
     <CopyToClipboard text={clipboardText}>
-      <button >Copy to clipboard</button>
+      <button id="clipboard-btn" >Copy to clipboard</button>
     </CopyToClipboard>
   </div>
 }
