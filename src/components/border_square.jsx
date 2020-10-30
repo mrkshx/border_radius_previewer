@@ -90,7 +90,7 @@ const BorderSquare = () => {
         });
       }}
       className="sliderBottomRight" />
-      <BorderRadiusClipboard/>
+      <BorderRadiusClipboard value={borderRadius} />
   </div>
 };
 
