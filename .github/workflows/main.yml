@@ -1,0 +1,16 @@
+name: Deploy to gh-pages
+
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Builds production app
+      - name: Deploy
+        run: yarn build
+      # Deploys to gh-pages
+      - name: Deploy
+        run: yarn deploy
