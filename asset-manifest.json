@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/border_radius_previewer/static/css/main.8ae913ba.chunk.css",
-    "main.js": "/border_radius_previewer/static/js/main.7ec674f3.chunk.js",
-    "main.js.map": "/border_radius_previewer/static/js/main.7ec674f3.chunk.js.map",
+    "main.js": "/border_radius_previewer/static/js/main.c8b1d077.chunk.js",
+    "main.js.map": "/border_radius_previewer/static/js/main.c8b1d077.chunk.js.map",
     "runtime-main.js": "/border_radius_previewer/static/js/runtime-main.e5e0ebd7.js",
     "runtime-main.js.map": "/border_radius_previewer/static/js/runtime-main.e5e0ebd7.js.map",
     "static/css/2.04161cee.chunk.css": "/border_radius_previewer/static/css/2.04161cee.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.04161cee.chunk.css",
     "static/js/2.e2b12a8b.chunk.js",
     "static/css/main.8ae913ba.chunk.css",
-    "static/js/main.7ec674f3.chunk.js"
+    "static/js/main.c8b1d077.chunk.js"
   ]
 }
