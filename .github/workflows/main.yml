@@ -9,8 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Builds production app
-      - name: Deploy
-        run: yarn build
+      - name: Install Dependencies and Build
+        run: |
+          yarn install
+          yarn build
       # Deploys to gh-pages
-      - name: Deploy
-        run: yarn deploy
+      - name: Install Dependencies and Build and Deploy
+        run: |
+          yarn install 
+          yarn deploy
